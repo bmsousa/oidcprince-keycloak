@@ -1,0 +1,5 @@
+﻿Flask==3.0.3
+Flask-Session
+Flask-OIDC==2.1.1
+Authlib==1.3.0
+urllib3==2.2.1

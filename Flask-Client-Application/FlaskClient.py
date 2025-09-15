@@ -23,7 +23,7 @@ Session(app)
 
 app.config.update(
     {
-        "SECRET_KEY": "xzSbSVRmjcqSmvc1ONlVe7ztmI6aVdPe",
+        "SECRET_KEY": "CLIENT_SECRET_KEYCLOAK",
         "TESTING": True,
         "DEBUG": True,
         "OIDC_CLIENT_SECRETS": "client_secrets.json",

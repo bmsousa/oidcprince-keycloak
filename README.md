@@ -15,6 +15,16 @@ To test our implementation, just follow the steps below.
 
 - Open http://127.0.0.1:5001 in your browser to test the API, or test with Keycloak.
 - Open http://127.0.0.1:8080 to access the Keycloak admin interface.
+
+Note: if it is the first time you are setting up keycloak you may encounter the error: 
+
+*Local access required*
+*You will need local access to create the temporary administrative user.*
+*To create the temporary administrative user open http://localhost:8080/, or use a bootstrap-admin command.*
+
+
+Thus you need to change the Docker file to include the bootstrap variables to init the  master realm with admin user.
+
 - Log in using admin credentials (default: username `admin`, password `admin`).
 - Check the [`README`](./oidc-keycloak-theme-testversion#readme) to see more information about the screens.
 - To stop and remove the volumes and the containers (optional): `docker-compose down -v`
